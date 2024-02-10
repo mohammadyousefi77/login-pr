@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --form-border-color:rgba(255, 255, 255, 0.13);
+}
+ *,
+ *::after,
+ *::before{
+    box-sizing: border-box;
+    
+ }
+ body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #080710;
+    margin: 0;
+    padding: 0;
+    
+ }
+
+ .container{
+    width: 100%;
+    height: 100%;
+     /* background-size: cover; */
+     /* position: relative; */
+     /* text-align: center; */
+     z-index: -1;
+     background-color: transparent;
+     
+     /* position: relative; */
+
+ }
+ 
+ 
+
+ 
+
+ .form-box{
+    /* position: absolute; */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+    width: 500px;
+        /* z-index: 3; */
+    height: auto;
+    
+ }
+.login-form{
+    /* width: 50dvw;
+    height: auto; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+    width: 100%;
+        /* z-index: 3; */
+    height: auto;
+    
+
+    padding: 50px 35px;
+    border-radius: 10px;
+    background-color:var(--form-border-color);
+    border: 2px solid var(--form-border-color) ;
+    color: #fff;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 7.5px );
+   z-index: 4;
+   animation: form-login  2s infinite  ;
+}
+.login-head{
+ text-align: center;
+}
+.username-div{
+
+}
+.username-lable{
+
+}
+.username-text{
+
+}
+.password-div{
+
+}
+.password-lable{
+
+}
+.password-text{
+
+}
+.login-button-div{
+
+}
+.login-bt{
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    border-radius: 7px;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 50px;
+    padding-left: 10px;
+     
+    font-weight: 300px;
+ 
+    width: 100%;
+    border-radius: 7px;
+}
+
+                  
+.username-div,
+.password-div{
+    margin-bottom: 35px;
+}
+.username-lable,
+.password-lable{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.red-circle{
+    width:200px;
+    height: 200px;
+    border-radius: 200%;
+    background: linear-gradient(180deg, rgba(243,0,0,1) 0%, rgba(231,188,11,0.9865196078431373) 100%);
+    z-index: 1;
+  position: absolute;
+    left: -15%;
+    top: -323px;
+     
+}
+
+.blue-circle{
+    width:200px;
+    height: 200px;
+    border-radius: 200%;
+    background: linear-gradient(150deg, rgba(0,193,243,1) 0%, rgba(3,27,143,0.9865196078431373) 100%);
+    z-index: 2;
+    position: absolute;
+    left: 85%;
+    
+    bottom: -320px;
+    
+}
+
+@keyframes form-login {
+
+    from{
+box-shadow: 1px 1px 14px rgba(71, 239, 10, 0.3).3);
+
+
+    }
+    to{
+        box-shadow: 1px 1px 14px rgb(158, 132, 2)
+        
+    }
+    
+}
+@media screen and (max-width:1200px) {
+  
+    .form-box{
+        width: 50dvw;
+
+    }
+    /* .blue-circle,.red-circle{
+        width: 170px;
+        height: 170px;
+    } */
+    .red-circle{
+        left: -15%;
+        top: -300px;
+        width: 155px;
+        height: 155px;
+    }
+    .blue-circle{
+        width: 155px;
+        height: 155px;
+        left: 87%;
+        bottom: -300px;
+    }
+}
+@media screen and (max-width:600px) {
+  
+    .form-box{
+        width: 50dvw;
+
+    }
+    .red-circle{
+        left: -20%;
+        top: -295px;
+        width: 135px;
+        height: 135px;
+    }
+    .blue-circle{
+        width: 135px;
+        height: 135px;
+        left: 75%;
+        bottom: -300px;
+    }
+}
+
+
+
+
+
+
